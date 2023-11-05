@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container{
+    background:#00BCD9;
+    display:flex;
+}
+
+.container .left-panel{
+    position: sticky;
+    top:70px;
+    width:250px;
+    height:calc(100vh - 70px);
+}
+
+.container .left-panel ul{
+    padding:10px 0px;
+}
+
+.container .left-panel ul li{
+    list-style: none;
+    display: flex;
+    padding:.7rem 1rem;
+    align-items: center;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .left-panel ul li:hover{
+    background:#ddd;
+}
+
+.container .left-panel ul li > p{
+    margin-left: 10px;
+}
+
+.container .left-panel ul li > i{
+    font-size:20px;
+    color:slateblue;
+}
+
+
+.middle-panel{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.middle-panel{
+    display:flex;
+    padding:1rem;
+}
+
+
+.post{
+    width:700px;
+    background:#FFEF00;
+    border-radius:10px;
+    padding:10px;
+    margin:10px;
+}
+
+.post .post-top{
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+
+.post .post-top .dp{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.post .post-top .dp > img{
+    width:100%;
+    cursor:pointer;
+}
+
+.post .post-top .post-info{
+    margin-left:10px;    
+    font-weight: bold;
+}
+
+.post .post-top .post-info .name{
+    cursor:pointer;
+    font-size:34px;
+}
+
+.post .post-top i{
+    margin-left:auto;
+    cursor: pointer;
+}
+
+.post .post-top > input{
+    height:40px;
+    padding:5px 10px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    flex:1;
+    background:#eee;
+    margin-left:10px;
+}
+
+.post .post-content{
+    font-size:16px;
+    font-weight:normal;
+    padding:10px;
+}
+
+.post .post-content > img{
+    width:100%;
+    margin:5px 0px;
+}
+
+.text-content {
+display: flex;
+flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.text-content h5 {
+margin: 0; 
+}
+
+.text-content p {
+margin-top: 5px;
+font-size: 12px; 
+}
+
+.enclosing-box {
+    border: 2px solid #6d6767; /* Definir un borde de 2px sólido en color negro */
+    padding: 10px; /* Espaciado interno de 10px */
+    background-color: #526EFF; /* Color de fondo gris claro */
+    width: 350px; /* Ancho deseado del recuadro */
+    margin: 0 auto; /* Centrar el recuadro horizontalmente en la página */
+}
+
+.button-list {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.button-list li {
+    display: inline; /* Muestra los elementos de la lista en línea (en una fila) */
+    margin-right: 40px; /* Agrega un espacio entre los botones */
+}
+
+.button-list a {
+    display: inline-block; /* Convierte el enlace en un bloque en línea */
+    padding: 40px 60px; /* Agrega relleno alrededor del texto del botón */
+    border: 2px solid #000; /* Borde negro de 2px */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #000; /* Color del texto */
+    background-color: #fff; /* Color de fondo blanco */
+}
+
+.button-list a:hover {
+    background-color: #20288b; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    color: #fff; /* Cambia el color del texto al pasar el cursor sobre el botón */
+}
+
+.button-list li {
+    position: relative;
+    left: 50px; /* Mueve los botones 10px hacia la derecha */
+}
+
+.button-list li {
+    margin-right: 20px; /* Aumenta el espacio entre los botones */
+}
+
+.button-list a {
+    padding: 25px 40px; /* Aumenta el espacio dentro de cada botón */
+}
+
+.button-list li {
+    margin-top: 20px; /* Agrega un margen superior de 10px a cada botón */
+}
+
+.footer{
+    background-color: #cbd6e2;
+}
+
+.footer-contents {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer ol li {
+    padding-right: 85px;
+    font-size: 12px;
+    color: #606770;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #606770;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 11px;
+    color: #606770;
+}
+
+.move-right {
+    margin-left: 80px; /* Ajusta el valor de margen izquierdo según la cantidad que desees mover la imagen hacia la derecha */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #258cd1;
+}
+
+/* Estilo CSS para mover el formulario hacia la izquierda */
+fieldset {
+    margin-left: 500px; /* Ajusta el valor según tus preferencias */
+    margin-right: 400px;
+}
+
+
+.sub{
+    cursor:pointer;
+    font-size:25px;
+}
